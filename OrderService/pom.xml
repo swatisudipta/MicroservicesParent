@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.5</version> <!-- or whichever version you prefer -->
+        <relativePath/>
+    </parent>
+
+    <groupId>com.example</groupId>
+    <artifactId>OrderService</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging> <!-- Important for Tomcat Deployment -->
+
+<dependencies>
+    <!-- Spring Boot Web Starter -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <!-- For WAR packaging -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-tomcat</artifactId>
+        <scope>provided</scope>
+    </dependency>
+
+    <!-- Add dependency on PaymentService -->
+    <dependency>
+        <groupId>com.example</groupId>
+        <artifactId>PaymentService</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+    <!-- You can also add other microservices dependencies here -->
+</dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
