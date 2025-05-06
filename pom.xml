@@ -8,7 +8,7 @@
     <modules>
         <module>NotificationService</module>
         <module>PaymentService</module>
-        <module>UserService</module>
+        
         <module>OrderService</module>
         
     </modules>
