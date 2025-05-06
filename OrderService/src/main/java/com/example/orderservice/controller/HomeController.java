@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-    @GetMapping("/OrderService")
+    @GetMapping("/orderService")
     public String home() {
         System.out.println("Accessed /OrderService");
         return "forward:/index.html";
