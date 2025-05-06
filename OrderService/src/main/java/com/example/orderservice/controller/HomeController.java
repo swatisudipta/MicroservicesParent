@@ -9,6 +9,6 @@ public class HomeController {
     @GetMapping("/orderService")
     public String home() {
         System.out.println("Accessed /OrderService");
-        return "forward:/index.html";
+        return "welcome";
     }
 }
