@@ -30,7 +30,7 @@
     <!-- Add dependency on PaymentService -->
     <dependency>
         <groupId>com.example</groupId>
-        <artifactId>UserService</artifactId>
+        <artifactId>PaymentService</artifactId>
         <version>1.0-SNAPSHOT</version>
     </dependency>
 
