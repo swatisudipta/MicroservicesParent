@@ -1,6 +1,6 @@
 package com.example.userservice;
 
-import com.example.orderservice.OrderService;
+import com.example.paymentservice.PaymentService;
 
 public class UserService {
     private OrderService orderService;
