@@ -8,7 +8,8 @@
     <modules>
         <module>NotificationService</module>
         <module>PaymentService</module>
-        <module>OrderService</module>
         <module>UserService</module>
+        <module>OrderService</module>
+        
     </modules>
 </project>
